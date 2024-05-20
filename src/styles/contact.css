@@ -1,0 +1,42 @@
+.contact {
+    width: 55%;
+}
+
+.contact__title {
+    color: #5e0b8e;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact__card {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+}
+
+.contact__card__email,
+.contact__card__linkedin,
+.contact__card__github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    clip-path: circle(50%);
+    background-color: #ffff;
+    margin-left: 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #5e0b8e;
+}

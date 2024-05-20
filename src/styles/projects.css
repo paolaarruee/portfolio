@@ -1,0 +1,98 @@
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__title {
+    color: #5e0b8e;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+.projects__cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-project {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+    margin: 30px 35px 20px 0;
+    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+
+.description-project {
+    font-size: 22px;
+    color: #ffff;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    z-index: 2;
+    position: relative;
+}
+
+.github-logo {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #ffff;
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .projects__cards {
+        width: 80%;
+    }
+
+    .card-project {
+        width: 90%;
+        height: 150px;
+        margin: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description-project {
+        font-size: 12px;
+    }
+
+    .image-project {
+        margin-top: 20px;
+        width: 140px;
+        height: 90px;
+    }
+
+    .github-logo {
+        margin-top: 15px;
+        width: 15px;
+        height: 15px;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <title>Portfólio Paola Arrueé - Desenvolvedora Full-Stack</title>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/skills.js"></script>
+  </head>
+  <body class="body">
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="logo" class="logo__image" />
+        </div>
+        <div class="menu__nav">
+          <div class="mobile-menu">
+            <div class="hamburguer-menu">
+              <div class="hamburguer-menu__line"></div>
+              <div class="hamburguer-menu__line"></div>
+              <div class="hamburguer-menu__line"></div>
+            </div>
+          </div>
+
+          <nav class="navigation" id="navigationMenu">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+                
+              </li>
+
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">Sobre Mim</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#skills" class="navigation__link">Conhecimentos</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#projects" class="navigation__link">Projetos</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home__profile-picture">
+          <img
+            src="assets/img/avatar.png"
+            alt="Foto de um avatar usando notebook"
+            class="home__profile-picture__image"
+          />
+        </div>
+
+        <div class="home__text">
+          <p class="home__text__name">Oi, eu sou a Paola.</p>
+          <p class="home__text__description">
+            Desenvolvedora Full-Stack com foco em Front-end
+          </p>
+
+          <div class="home__buttons">
+            <a
+              class="home__buttons__anchor"
+              href="assets/documentos/CV-Paola-Arruee.pdf"
+              target="_blank"
+              download="CV-Paola-Arruee"
+            >
+              <button class="home__buttons__download">Download CV</button>
+            </a>
+            <button class="home__buttons__contact">Entrar em Contato</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" >
+        <div class="about-me">
+          <h1 class="about-me__title">Sobre Mim</h1>
+          <p class="about-me__text">
+            Como desenvolvedora, iniciei minha jornada como especialista em
+            front-end e ao longo do tempo expandi minha atuação para abraçar
+            desafios full-stack. Tenho experiência prática com diversas
+            tecnologias, incluindo Angular, React, React Native, Spring Boot,
+            Node.js e Express.
+          </p>
+          <p class="about-me__text">
+            Atualmente, desempenho o papel de mentora de alguns trainees,
+            compartilhando meu conhecimento e experiência para ajudá-los a
+            crescer em suas próprias jornadas profissionais.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills__title"><h1>Conhecimentos</h1></div>
+        <div id="cards-container" class="skills__cards"></div>
+      </section>
+
+      <section class="projects" >
+        
+          <div class="projects__title"><h1 id="projects">Projetos</h1></div>
+            <div id="cards-project" class="projects__cards"></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__title">
+          <h1>Contato</h1>
+        </div>
+        <div class="contact__card">
+          <div class="contact__card__email">
+            <a href="mailto:paolaarruee@gmail.com"
+              ><i class="fa-regular fa-envelope icon" ></i></a>
+          </div>
+          <div class="contact__card__linkedin">
+            <a href="https://www.linkedin.com/in/paolaarruee/"
+              ><i class="fa-brands fa-linkedin-in icon"></i></a>
+          </div>
+          <div class="contact__card__github">
+            <a href="https://github.com/paolaarruee"></i>
+              <i class="fa-brands fa-github icon"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

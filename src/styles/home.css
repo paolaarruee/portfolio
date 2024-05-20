@@ -1,0 +1,152 @@
+/* .home {
+    padding: 70px 30px 10px 30px
+} */
+
+.home__profile-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home__profile-picture__image {
+    width: 300px;
+    height: 300px;
+    border-radius: 90px;
+    clip-path: circle(50%);
+}
+
+.home__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.home__text__name {
+    color: #5e0b8e;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+.home__text__description {
+    color: #8f16d4;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2em;
+}
+
+.home__buttons {
+    padding-top: 25px;
+}
+
+.home__buttons__download,
+.home__buttons__contact {
+    width: 170px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    background-color: #7b0dbb;
+    color: #e0e0e0;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer
+}
+
+.home__buttons__anchor {
+    text-decoration: none;
+
+}
+
+.home__buttons__contact {
+    margin-left: 50px;
+}
+
+.home__buttons__download:hover {
+    background-color: #ddc3fd;
+    color: #7b0dbb;
+}
+
+
+@media (max-width: 768px) {
+    .inicio {
+        padding: 20px;
+    }
+
+    .home__profile-picture {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home__profile-picture__image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home__text {
+        display: flex;
+        width: 80%;
+
+    }
+
+    .home__text__name {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .home__text__description {
+        font-size: 21px;
+        font-weight: 400;
+        margin-left: 0;
+    }
+
+    .home__buttons__download,
+    .home__buttons__contact {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .home__buttons__contact {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 375px) {
+    .home__text {
+        align-items: flex-start;
+    }
+
+    .home__text__name {
+        font-size: 25px;
+    }
+
+    .home__text__description {
+        font-size: 19px;
+    }
+
+    .home__buttons {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__buttons__download,
+    .home__buttons__contact {
+        width: 180px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .home__buttons__contact {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
